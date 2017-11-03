@@ -11827,7 +11827,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[71]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -11849,7 +11849,7 @@ div#notebook {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[71]:</div>
+<div class="prompt output_prompt">Out[2]:</div>
 
 
 
@@ -11958,7 +11958,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[72]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">asl</span><span class="o">.</span><span class="n">df</span><span class="o">.</span><span class="n">ix</span><span class="p">[</span><span class="mi">98</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># look at the data available for an individual frame</span>
@@ -11974,7 +11974,25 @@ div#notebook {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[72]:</div>
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/Users/andriitsok/anaconda3/envs/ai.tsok.sign-language/lib/python3.6/site-packages/ipykernel_launcher.py:1: DeprecationWarning: 
+.ix is deprecated. Please use
+.loc for label based indexing or
+.iloc for positional indexing
+
+See the documentation here:
+http://pandas.pydata.org/pandas-docs/stable/indexing.html#ix-indexer-is-deprecated
+  &#34;&#34;&#34;Entry point for launching an IPython kernel.
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[3]:</div>
 
 
 
@@ -12017,7 +12035,7 @@ Name: (98, 1), dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[73]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">asl</span><span class="o">.</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;grnd-ry&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">asl</span><span class="o">.</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;right-y&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">asl</span><span class="o">.</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;nose-y&#39;</span><span class="p">]</span>
@@ -12034,7 +12052,7 @@ Name: (98, 1), dtype: object</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[73]:</div>
+<div class="prompt output_prompt">Out[4]:</div>
 
 
 
@@ -12158,7 +12176,7 @@ Name: (98, 1), dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[74]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">asl_utils</span> <span class="k">import</span> <span class="n">test_features_tryit</span>
@@ -12327,7 +12345,7 @@ Name: (98, 1), dtype: object</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[74]:</div>
+<div class="prompt output_prompt">Out[5]:</div>
 
 
 
@@ -12343,7 +12361,7 @@ Name: (98, 1), dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[75]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># collect the features into a list</span>
@@ -12362,7 +12380,7 @@ Name: (98, 1), dtype: object</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[75]:</div>
+<div class="prompt output_prompt">Out[6]:</div>
 
 
 
@@ -12388,7 +12406,7 @@ Name: (98, 1), dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[76]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">training</span> <span class="o">=</span> <span class="n">asl</span><span class="o">.</span><span class="n">build_training</span><span class="p">(</span><span class="n">features_ground</span><span class="p">)</span>
@@ -12429,7 +12447,7 @@ Name: (98, 1), dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[77]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">training</span><span class="o">.</span><span class="n">get_word_Xlengths</span><span class="p">(</span><span class="s1">&#39;CHOCOLATE&#39;</span><span class="p">)</span>
@@ -12445,7 +12463,7 @@ Name: (98, 1), dtype: object</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[77]:</div>
+<div class="prompt output_prompt">Out[8]:</div>
 
 
 
@@ -12519,7 +12537,7 @@ Name: (98, 1), dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[78]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_means</span> <span class="o">=</span> <span class="n">asl</span><span class="o">.</span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;speaker&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
@@ -12536,7 +12554,7 @@ Name: (98, 1), dtype: object</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[78]:</div>
+<div class="prompt output_prompt">Out[9]:</div>
 
 
 
@@ -12646,7 +12664,7 @@ Name: (98, 1), dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[79]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">asl</span><span class="o">.</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;left-x-mean&#39;</span><span class="p">]</span><span class="o">=</span> <span class="n">asl</span><span class="o">.</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;speaker&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">df_means</span><span class="p">[</span><span class="s1">&#39;left-x&#39;</span><span class="p">])</span>
@@ -12663,7 +12681,7 @@ Name: (98, 1), dtype: object</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[79]:</div>
+<div class="prompt output_prompt">Out[10]:</div>
 
 
 
@@ -12815,7 +12833,7 @@ Name: (98, 1), dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[80]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">asl_utils</span> <span class="k">import</span> <span class="n">test_std_tryit</span>
@@ -12948,7 +12966,7 @@ Name: (98, 1), dtype: object</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[80]:</div>
+<div class="prompt output_prompt">Out[11]:</div>
 
 
 
@@ -13004,7 +13022,7 @@ Some ideas to get you started:<ul>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[81]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">asl</span><span class="o">.</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;norm-rx&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">asl</span><span class="o">.</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;right-x&#39;</span><span class="p">]</span><span class="o">-</span><span class="n">asl</span><span class="o">.</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;speaker&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">df_means</span><span class="p">[</span><span class="s1">&#39;right-x&#39;</span><span class="p">]))</span><span class="o">/</span><span class="n">asl</span><span class="o">.</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;speaker&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">df_std</span><span class="p">[</span><span class="s1">&#39;right-x&#39;</span><span class="p">])</span>
@@ -13022,7 +13040,7 @@ Some ideas to get you started:<ul>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[82]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">asl</span><span class="o">.</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;polar-rr&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">((</span><span class="n">asl</span><span class="o">.</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;grnd-rx&#39;</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">asl</span><span class="o">.</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;grnd-ry&#39;</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span><span class="o">**</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
@@ -13040,7 +13058,7 @@ Some ideas to get you started:<ul>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[83]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">asl</span><span class="o">.</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;delta-rx&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">asl</span><span class="o">.</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;right-x&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">diff</span><span class="p">()</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mf">0.0</span><span class="p">)</span>
@@ -13058,7 +13076,7 @@ Some ideas to get you started:<ul>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[84]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#to use min-max normalization:</span>
@@ -13099,7 +13117,7 @@ feature sets.  The test simply looks for some valid values but is not exhaustive
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[85]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">unittest</span>
@@ -13145,7 +13163,7 @@ feature sets.  The test simply looks for some valid values but is not exhaustive
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>....
 ----------------------------------------------------------------------
-Ran 4 tests in 0.013s
+Ran 4 tests in 0.014s
 
 OK
 </pre>
@@ -13154,7 +13172,7 @@ OK
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[85]:</div>
+<div class="prompt output_prompt">Out[16]:</div>
 
 
 
@@ -13195,7 +13213,7 @@ OK
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[86]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">warnings</span>
@@ -13251,7 +13269,7 @@ logL = -2331.1138127433205
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[87]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">show_model_stats</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">model</span><span class="p">):</span>
@@ -13282,12 +13300,12 @@ logL = -2331.1138127433205
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Number of states trained in model for BOOK is 3
 hidden state #0
-mean =  [ -3.46504869  50.66686933  14.02391587  52.04731066]
-variance =  [ 49.12346305  43.04799144  39.35109609  47.24195772]
-
-hidden state #1
 mean =  [ -11.45300909   94.109178     19.03512475  102.2030162 ]
 variance =  [  77.403668    203.35441965   26.68898447  156.12444034]
+
+hidden state #1
+mean =  [ -3.46504869  50.66686933  14.02391587  52.04731066]
+variance =  [ 49.12346305  43.04799144  39.35109609  47.24195772]
 
 hidden state #2
 mean =  [ -1.12415027  69.44164191  17.02866283  77.7231196 ]
@@ -13312,7 +13330,7 @@ variance =  [ 19.70434594  16.83041492  30.51552305  11.03678246]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[88]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_testword</span> <span class="o">=</span> <span class="s1">&#39;CHOCOLATE&#39;</span>
@@ -13368,7 +13386,7 @@ logL = -601.3291470028619
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[89]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
@@ -13381,7 +13399,7 @@ logL = -601.3291470028619
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[90]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
@@ -14766,7 +14784,7 @@ wzCMHMOM3zAMI8f4/9JTPkbW4t0uAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[91]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">my_model_selectors</span> <span class="k">import</span> <span class="n">SelectorConstant</span>
@@ -14811,7 +14829,7 @@ wzCMHMOM3zAMI8f4/9JTPkbW4t0uAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[92]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="k">import</span> <span class="n">KFold</span>
@@ -14881,7 +14899,7 @@ Train fold indices:[0 1 2 3] Test fold indices:[4 5]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[93]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">words_to_train</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;FISH&#39;</span><span class="p">,</span> <span class="s1">&#39;BOOK&#39;</span><span class="p">,</span> <span class="s1">&#39;VEGETABLE&#39;</span><span class="p">,</span> <span class="s1">&#39;FUTURE&#39;</span><span class="p">,</span> <span class="s1">&#39;JOHN&#39;</span><span class="p">]</span>
@@ -14895,7 +14913,7 @@ Train fold indices:[0 1 2 3] Test fold indices:[4 5]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[94]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># autoreload for automatically reloading changes made in my_model_selectors and my_recognizer</span>
@@ -14907,29 +14925,10 @@ Train fold indices:[0 1 2 3] Test fold indices:[4 5]
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>The autoreload extension is already loaded. To reload it, use:
-  %reload_ext autoreload
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[95]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">my_model_selectors</span> <span class="k">import</span> <span class="n">SelectorCV</span>
@@ -14962,11 +14961,11 @@ Train fold indices:[0 1 2 3] Test fold indices:[4 5]
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Training complete for FISH with 3 states with time 0.021201139999902807 seconds
-Training complete for BOOK with 3 states with time 0.06976728000154253 seconds
-Training complete for VEGETABLE with 3 states with time 0.021308416995452717 seconds
-Training complete for FUTURE with 3 states with time 0.04519303400593344 seconds
-Training complete for JOHN with 3 states with time 0.5319544419908198 seconds
+<pre>Training complete for FISH with 3 states with time 0.015833586003282107 seconds
+Training complete for BOOK with 3 states with time 0.05761766200885177 seconds
+Training complete for VEGETABLE with 3 states with time 0.01894323700980749 seconds
+Training complete for FUTURE with 3 states with time 0.039216997000039555 seconds
+Training complete for JOHN with 3 states with time 0.4870002370007569 seconds
 </pre>
 </div>
 </div>
@@ -14977,7 +14976,7 @@ Training complete for JOHN with 3 states with time 0.5319544419908198 seconds
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[96]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">my_model_selectors</span> <span class="k">import</span> <span class="n">SelectorBIC</span>
@@ -15010,11 +15009,11 @@ Training complete for JOHN with 3 states with time 0.5319544419908198 seconds
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Training complete for FISH with 3 states with time 0.018488011992303655 seconds
-Training complete for BOOK with 3 states with time 0.06585790700046346 seconds
-Training complete for VEGETABLE with 3 states with time 0.02326505100063514 seconds
-Training complete for FUTURE with 3 states with time 0.048469460001797415 seconds
-Training complete for JOHN with 3 states with time 0.5391995060053887 seconds
+<pre>Training complete for FISH with 3 states with time 0.10070461200666614 seconds
+Training complete for BOOK with 8 states with time 1.8265046320011606 seconds
+Training complete for VEGETABLE with 9 states with time 0.7122994530072901 seconds
+Training complete for FUTURE with 9 states with time 1.8551647090062033 seconds
+Training complete for JOHN with 13 states with time 17.354298286008998 seconds
 </pre>
 </div>
 </div>
@@ -15025,7 +15024,7 @@ Training complete for JOHN with 3 states with time 0.5391995060053887 seconds
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[97]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">my_model_selectors</span> <span class="k">import</span> <span class="n">SelectorDIC</span>
@@ -15058,11 +15057,11 @@ Training complete for JOHN with 3 states with time 0.5391995060053887 seconds
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Training complete for FISH with 3 states with time 0.019053619995247573 seconds
-Training complete for BOOK with 3 states with time 0.06317051999212708 seconds
-Training complete for VEGETABLE with 3 states with time 0.019399944998440333 seconds
-Training complete for FUTURE with 3 states with time 0.04441935700015165 seconds
-Training complete for JOHN with 3 states with time 0.562100234994432 seconds
+<pre>Training complete for FISH with 3 states with time 0.6115666469995631 seconds
+Training complete for BOOK with 15 states with time 3.433136186999036 seconds
+Training complete for VEGETABLE with 15 states with time 2.261237468002946 seconds
+Training complete for FUTURE with 15 states with time 3.3722518120048335 seconds
+Training complete for JOHN with 15 states with time 18.42992293399584 seconds
 </pre>
 </div>
 </div>
@@ -15076,7 +15075,11 @@ Training complete for JOHN with 3 states with time 0.562100234994432 seconds
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Question 2:</strong>  Compare and contrast the possible advantages and disadvantages of the various model selectors implemented.</p>
-<p><strong>Answer 2:</strong>  BIC in contrast to DIC and CV has smaller computation requirements. Using BIC in a high scale can have some timing impovements as some calculation can be parallelised.</p>
+<p><strong>Answer 2:</strong></p>
+<p>BIC:Bayesian Information Criterion tries to select model that maximizes the gain by improving within-class statistics. In the BIC equation, a penalty term penalizes complexity to avoid overfitting, so that it is not necessary to also use cross-validation in the selection process.</p>
+<p>DIC: Discriminative Information Criterion is a discriminant model, has high pre-processing time as it creates combination for all possible words and all states. Instead of a penalty term for complexity, it provides a penalty when model liklihoods for non-matching words are too similar to model likelihoods for the correct word in the word set. It is considered as the best performing selection strategy in most of the cases.</p>
+<p>CV: Cross validation generalizes well to new data by means of random sampling. The performance of such model icreases while we are increasing number of cross-validation set.</p>
+<p><a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.58.6208&amp;rep=rep1&amp;type=pdf">http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.58.6208&amp;rep=rep1&amp;type=pdf</a></p>
 
 </div>
 </div>
@@ -15093,7 +15096,7 @@ Training complete for JOHN with 3 states with time 0.562100234994432 seconds
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[98]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">asl_test_model_selectors</span> <span class="k">import</span> <span class="n">TestSelectors</span>
@@ -15117,7 +15120,7 @@ Training complete for JOHN with 3 states with time 0.562100234994432 seconds
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>....
 ----------------------------------------------------------------------
-Ran 4 tests in 25.191s
+Ran 4 tests in 29.662s
 
 OK
 </pre>
@@ -15126,7 +15129,7 @@ OK
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[98]:</div>
+<div class="prompt output_prompt">Out[29]:</div>
 
 
 
@@ -15154,7 +15157,7 @@ OK
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[99]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">my_model_selectors</span> <span class="k">import</span> <span class="n">SelectorConstant</span>
@@ -15213,7 +15216,7 @@ OK
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[100]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">test_set</span> <span class="o">=</span> <span class="n">asl</span><span class="o">.</span><span class="n">build_test</span><span class="p">(</span><span class="n">features_ground</span><span class="p">)</span>
@@ -15258,7 +15261,7 @@ Number of test set sentences: 40
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[101]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">my_recognizer</span> <span class="k">import</span> <span class="n">recognize</span>
@@ -15272,7 +15275,7 @@ Number of test set sentences: 40
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[118]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">features_all</span> <span class="o">=</span> <span class="p">{</span>
@@ -15316,50 +15319,50 @@ Number of test set sentences: 40
 <pre>
 WER results: ground and DIC
 
-**** WER = 0.6741573033707865
-Total correct: 58 out of 178
+**** WER = 0.5674157303370787
+Total correct: 77 out of 178
 Video  Recognized                                                    Correct
 =====================================================================================================
-    2: *GO *BOOK *ARRIVE                                             JOHN WRITE HOMEWORK
-    7: *SOMETHING-ONE *GO1 *IX CAN                                   JOHN CAN GO CAN
-   12: JOHN *HAVE *WHAT CAN                                          JOHN CAN GO CAN
-   21: JOHN *HOMEWORK *NEW *PREFER *CAR *CAR *FUTURE *EAT            JOHN FISH WONT EAT BUT CAN EAT CHICKEN
-   25: *FRANK *TELL *LOVE *TELL *LOVE                                JOHN LIKE IX IX IX
-   28: *FRANK *TELL *LOVE *TELL *LOVE                                JOHN LIKE IX IX IX
-   30: *SHOULD LIKE *GO *GO *GO                                      JOHN LIKE IX IX IX
-   36: *VISIT VEGETABLE *YESTERDAY *GIVE *MARY *MARY                 MARY VEGETABLE KNOW IX LIKE CORN1
-   40: *SUE *GIVE *CORN *VEGETABLE *GO                               JOHN IX THINK MARY LOVE
-   43: *FRANK *GO BUY HOUSE                                          JOHN MUST BUY HOUSE
-   50: *FRANK *SEE BUY CAR *SOMETHING-ONE                            FUTURE JOHN BUY CAR SHOULD
-   54: JOHN SHOULD *WHO BUY HOUSE                                    JOHN SHOULD NOT BUY HOUSE
-   57: *MARY *VISIT VISIT *VISIT                                     JOHN DECIDE VISIT MARY
-   67: *LIKE FUTURE NOT BUY HOUSE                                    JOHN FUTURE NOT BUY HOUSE
+    2: JOHN *NEW HOMEWORK                                            JOHN WRITE HOMEWORK
+    7: *SOMETHING-ONE *CAR *ARRIVE *ARRIVE                           JOHN CAN GO CAN
+   12: *IX *WHAT *WHAT *HOUSE                                        JOHN CAN GO CAN
+   21: JOHN *HOMEWORK *JOHN *NOT *CAR *CAR *FUTURE *MARY             JOHN FISH WONT EAT BUT CAN EAT CHICKEN
+   25: JOHN *IX IX *WHO IX                                           JOHN LIKE IX IX IX
+   28: JOHN *WHO IX IX *LOVE                                         JOHN LIKE IX IX IX
+   30: JOHN *MARY *MARY *MARY *MARY                                  JOHN LIKE IX IX IX
+   36: *VISIT *VISIT *GIVE *GO *MARY *IX                             MARY VEGETABLE KNOW IX LIKE CORN1
+   40: *SUE *GO *GIVE MARY *MARY                                     JOHN IX THINK MARY LOVE
+   43: JOHN *IX BUY HOUSE                                            JOHN MUST BUY HOUSE
+   50: *FRANK *FUTURE *GIVE1 CAR *JOHN                               FUTURE JOHN BUY CAR SHOULD
+   54: JOHN SHOULD NOT BUY HOUSE                                     JOHN SHOULD NOT BUY HOUSE
+   57: *MARY *VISIT VISIT MARY                                       JOHN DECIDE VISIT MARY
+   67: JOHN FUTURE *MARY BUY HOUSE                                   JOHN FUTURE NOT BUY HOUSE
    71: JOHN *FINISH VISIT MARY                                       JOHN WILL VISIT MARY
-   74: *IX *VISIT *GO *GO                                            JOHN NOT VISIT MARY
-   77: *JOHN BLAME *LOVE                                             ANN BLAME MARY
-   84: *LOVE *ARRIVE *HOMEWORK BOOK                                  IX-1P FIND SOMETHING-ONE BOOK
-   89: *GIVE *GIVE GIVE *IX IX *ARRIVE *BOOK                         JOHN IX GIVE MAN IX NEW COAT
-   90: *SOMETHING-ONE *SOMETHING-ONE IX *IX WOMAN *COAT              JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-   92: *FRANK GIVE *WOMAN *WOMAN WOMAN BOOK                          JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-  100: POSS NEW CAR BREAK-DOWN                                       POSS NEW CAR BREAK-DOWN
-  105: *FRANK *VEGETABLE                                             JOHN LEG
-  107: *SHOULD *IX FRIEND *GO *JANA                                  JOHN POSS FRIEND HAVE CANDY
-  108: *GIVE *LOVE                                                   WOMAN ARRIVE
-  113: IX CAR *CAR *IX *IX                                           IX CAR BLUE SUE BUY
-  119: *PREFER *BUY1 IX *BLAME *IX                                   SUE BUY IX CAR BLUE
-  122: JOHN *GIVE1 *COAT                                             JOHN READ BOOK
-  139: *SHOULD *BUY1 *CAR *BLAME BOOK                                JOHN BUY WHAT YESTERDAY BOOK
-  142: *FRANK *STUDENT YESTERDAY *TEACHER BOOK                       JOHN BUY YESTERDAY WHAT BOOK
-  158: LOVE *MARY WHO                                                LOVE JOHN WHO
-  167: *MARY IX *VISIT *WOMAN *LOVE                                  JOHN IX SAY LOVE MARY
-  171: *VISIT *VISIT BLAME                                           JOHN MARY BLAME
-  174: *CAN *GIVE3 GIVE1 *APPLE *WHAT                                PEOPLE GROUP GIVE1 JANA TOY
-  181: *BLAME ARRIVE                                                 JOHN ARRIVE
-  184: *GIVE1 BOY *GIVE1 TEACHER APPLE                               ALL BOY GIVE TEACHER APPLE
-  189: *JANA *SOMETHING-ONE *YESTERDAY *WHAT                         JOHN GIVE GIRL BOX
-  193: JOHN *SOMETHING-ONE *YESTERDAY BOX                            JOHN GIVE GIRL BOX
-  199: *LOVE CHOCOLATE WHO                                           LIKE CHOCOLATE WHO
-  201: JOHN *GIVE *GIVE *LOVE *ARRIVE HOUSE                          JOHN TELL MARY IX-1P BUY HOUSE
+   74: *IX *GO *MARY MARY                                            JOHN NOT VISIT MARY
+   77: *JOHN *GIVE1 *LOVE                                            ANN BLAME MARY
+   84: *JOHN *GIVE1 *HOMEWORK BOOK                                   IX-1P FIND SOMETHING-ONE BOOK
+   89: *MARY IX *IX *IX IX *ARRIVE *BOOK                             JOHN IX GIVE MAN IX NEW COAT
+   90: JOHN *ALL IX *IX *VISIT *HERE                                 JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
+   92: JOHN *IX IX *IX *IX BOOK                                      JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
+  100: *IX NEW CAR BREAK-DOWN                                        POSS NEW CAR BREAK-DOWN
+  105: JOHN *FRANK                                                   JOHN LEG
+  107: JOHN *IX *HAVE *ARRIVE *JANA                                  JOHN POSS FRIEND HAVE CANDY
+  108: *IX ARRIVE                                                    WOMAN ARRIVE
+  113: IX CAR *IX *MARY *IX                                          IX CAR BLUE SUE BUY
+  119: *VISIT *BUY1 IX *BOX *IX                                      SUE BUY IX CAR BLUE
+  122: JOHN *BUY BOOK                                                JOHN READ BOOK
+  139: JOHN *BUY1 WHAT *MARY BOOK                                    JOHN BUY WHAT YESTERDAY BOOK
+  142: JOHN BUY YESTERDAY WHAT BOOK                                  JOHN BUY YESTERDAY WHAT BOOK
+  158: LOVE JOHN WHO                                                 LOVE JOHN WHO
+  167: JOHN *MARY *GO LOVE MARY                                      JOHN IX SAY LOVE MARY
+  171: JOHN MARY BLAME                                               JOHN MARY BLAME
+  174: *CAR *GIVE1 GIVE1 *YESTERDAY *WHAT                            PEOPLE GROUP GIVE1 JANA TOY
+  181: JOHN ARRIVE                                                   JOHN ARRIVE
+  184: ALL BOY *GIVE1 TEACHER *YESTERDAY                             ALL BOY GIVE TEACHER APPLE
+  189: JOHN *SOMETHING-ONE *VISIT *CAR                               JOHN GIVE GIRL BOX
+  193: JOHN *SOMETHING-ONE *VISIT BOX                                JOHN GIVE GIRL BOX
+  199: *JOHN *ARRIVE *GO                                             LIKE CHOCOLATE WHO
+  201: JOHN *MARY *LOVE *JOHN *GIVE1 HOUSE                           JOHN TELL MARY IX-1P BUY HOUSE
 
 WER results: norm and DIC
 
@@ -15367,93 +15370,93 @@ WER results: norm and DIC
 Total correct: 67 out of 178
 Video  Recognized                                                    Correct
 =====================================================================================================
-    2: *MARY WRITE *ARRIVE                                           JOHN WRITE HOMEWORK
-    7: JOHN *NEW *JOHN CAN                                           JOHN CAN GO CAN
-   12: *SHOULD *HAVE *GO1 CAN                                        JOHN CAN GO CAN
-   21: *LIKE *NEW *HAVE *IX-1P *CAR *BLAME *CHICKEN *WRITE           JOHN FISH WONT EAT BUT CAN EAT CHICKEN
-   25: *IX LIKE *LIKE *LIKE IX                                       JOHN LIKE IX IX IX
-   28: *ANN LIKE *ANN *LIKE *ANN                                     JOHN LIKE IX IX IX
-   30: *SHOOT LIKE *LOVE *LIKE *MARY                                 JOHN LIKE IX IX IX
-   36: *LEAVE *NOT *YESTERDAY *VISIT LIKE *JOHN                      MARY VEGETABLE KNOW IX LIKE CORN1
-   40: JOHN *LEAVE *FUTURE1 *VEGETABLE LOVE                          JOHN IX THINK MARY LOVE
-   43: JOHN *SHOULD BUY HOUSE                                        JOHN MUST BUY HOUSE
-   50: *FRANK *SEE *ARRIVE CAR *CAR                                  FUTURE JOHN BUY CAR SHOULD
-   54: JOHN SHOULD *FUTURE *STUDENT HOUSE                            JOHN SHOULD NOT BUY HOUSE
-   57: *MARY *MARY *MARY MARY                                        JOHN DECIDE VISIT MARY
-   67: *IX-1P FUTURE *JOHN *ARRIVE HOUSE                             JOHN FUTURE NOT BUY HOUSE
-   71: JOHN WILL VISIT MARY                                          JOHN WILL VISIT MARY
-   74: *WOMAN *VISIT VISIT *FRANK                                    JOHN NOT VISIT MARY
-   77: *IX BLAME MARY                                                ANN BLAME MARY
-   84: *IX *ARRIVE *NEW BOOK                                         IX-1P FIND SOMETHING-ONE BOOK
-   89: *FUTURE *THROW *JOHN *JOHN *WOMAN *BOOK *BREAK-DOWN           JOHN IX GIVE MAN IX NEW COAT
-   90: *SELF *GIVE1 IX *IX WOMAN *CHOCOLATE                          JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-   92: JOHN *GIVE1 IX *IX WOMAN BOOK                                 JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
+    2: JOHN *ARRIVE *ARRIVE                                          JOHN WRITE HOMEWORK
+    7: *MARY *CAR GO CAN                                             JOHN CAN GO CAN
+   12: JOHN *WHAT *ARRIVE CAN                                        JOHN CAN GO CAN
+   21: *MARY *JOHN *JOHN *BLAME *CAR *CAR *FUTURE *JOHN              JOHN FISH WONT EAT BUT CAN EAT CHICKEN
+   25: JOHN LIKE IX *LIKE IX                                         JOHN LIKE IX IX IX
+   28: *ANN *ANN *ANN *ANN *ANN                                      JOHN LIKE IX IX IX
+   30: *IX-1P *CHOCOLATE *MARY *LOVE *LOVE                           JOHN LIKE IX IX IX
+   36: MARY *MARY *YESTERDAY *SHOOT LIKE *IX                         MARY VEGETABLE KNOW IX LIKE CORN1
+   40: *MARY *JOHN *FUTURE1 *VEGETABLE *MARY                         JOHN IX THINK MARY LOVE
+   43: JOHN *FUTURE BUY HOUSE                                        JOHN MUST BUY HOUSE
+   50: *POSS *SEE *JOHN CAR *IX                                      FUTURE JOHN BUY CAR SHOULD
+   54: JOHN *FUTURE *SHOULD *ARRIVE HOUSE                            JOHN SHOULD NOT BUY HOUSE
+   57: *SHOOT *IX *JOHN MARY                                         JOHN DECIDE VISIT MARY
+   67: *MARY *IX *JOHN *ARRIVE HOUSE                                 JOHN FUTURE NOT BUY HOUSE
+   71: JOHN *FUTURE VISIT MARY                                       JOHN WILL VISIT MARY
+   74: *LIKE *VISIT VISIT MARY                                       JOHN NOT VISIT MARY
+   77: *JOHN BLAME MARY                                              ANN BLAME MARY
+   84: *JOHN *BOX *VISIT BOOK                                        IX-1P FIND SOMETHING-ONE BOOK
+   89: *MARY *POSS *IX *IX IX *ARRIVE *BOOK                          JOHN IX GIVE MAN IX NEW COAT
+   90: *SELF *IX IX *IX WOMAN BOOK                                   JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
+   92: JOHN *IX IX *IX *LOVE BOOK                                    JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
   100: POSS NEW CAR BREAK-DOWN                                       POSS NEW CAR BREAK-DOWN
-  105: *WHO *SEE                                                     JOHN LEG
-  107: *TELL *IX *BOX *LIKE *JANA                                    JOHN POSS FRIEND HAVE CANDY
-  108: *LOVE *HOMEWORK                                               WOMAN ARRIVE
-  113: IX CAR *IX SUE *HAVE                                          IX CAR BLUE SUE BUY
-  119: *VEGETABLE *BUY1 IX CAR *GO                                   SUE BUY IX CAR BLUE
-  122: JOHN *HOUSE *COAT                                             JOHN READ BOOK
-  139: JOHN *BUY1 *CAR YESTERDAY BOOK                                JOHN BUY WHAT YESTERDAY BOOK
+  105: JOHN *POSS                                                    JOHN LEG
+  107: *MARY POSS *CAR *MARY *TOY1                                   JOHN POSS FRIEND HAVE CANDY
+  108: *LOVE *JOHN                                                   WOMAN ARRIVE
+  113: IX CAR *IX *JOHN *BOX                                         IX CAR BLUE SUE BUY
+  119: SUE *BUY1 IX *JOHN *GO                                        SUE BUY IX CAR BLUE
+  122: JOHN *GIVE1 BOOK                                              JOHN READ BOOK
+  139: JOHN *BUY1 *CAR *JOHN BOOK                                    JOHN BUY WHAT YESTERDAY BOOK
   142: JOHN BUY YESTERDAY WHAT BOOK                                  JOHN BUY YESTERDAY WHAT BOOK
-  158: LOVE *MARY *CORN                                              LOVE JOHN WHO
-  167: JOHN *JOHN *SAY-1P LOVE MARY                                  JOHN IX SAY LOVE MARY
-  171: *SHOOT *JOHN BLAME                                            JOHN MARY BLAME
-  174: *NEW *GIVE1 GIVE1 *WHO *CAR                                   PEOPLE GROUP GIVE1 JANA TOY
-  181: JOHN *BOX                                                     JOHN ARRIVE
+  158: LOVE JOHN WHO                                                 LOVE JOHN WHO
+  167: JOHN IX *SAY-1P LOVE *IX                                      JOHN IX SAY LOVE MARY
+  171: *MARY *JOHN BLAME                                             JOHN MARY BLAME
+  174: *CAR *GIVE1 GIVE1 *YESTERDAY *CAR                             PEOPLE GROUP GIVE1 JANA TOY
+  181: *MARY *BOX                                                    JOHN ARRIVE
   184: *IX *IX *GIVE1 TEACHER APPLE                                  ALL BOY GIVE TEACHER APPLE
-  189: *JANA *SEE *PREFER *ARRIVE                                    JOHN GIVE GIRL BOX
-  193: JOHN *SEE *YESTERDAY BOX                                      JOHN GIVE GIRL BOX
-  199: *JOHN CHOCOLATE *JOHN                                         LIKE CHOCOLATE WHO
-  201: JOHN *THINK *WOMAN *WOMAN *STUDENT HOUSE                      JOHN TELL MARY IX-1P BUY HOUSE
+  189: *MARY *MARY *YESTERDAY BOX                                    JOHN GIVE GIRL BOX
+  193: *LEAVE *YESTERDAY *YESTERDAY BOX                              JOHN GIVE GIRL BOX
+  199: *JOHN *ARRIVE *JOHN                                           LIKE CHOCOLATE WHO
+  201: JOHN *GIVE1 *IX *WOMAN *ARRIVE HOUSE                          JOHN TELL MARY IX-1P BUY HOUSE
 
 WER results: polar and DIC
 
-**** WER = 0.6235955056179775
-Total correct: 67 out of 178
+**** WER = 0.5280898876404494
+Total correct: 84 out of 178
 Video  Recognized                                                    Correct
 =====================================================================================================
-    2: *GO *BOOK HOMEWORK                                            JOHN WRITE HOMEWORK
-    7: JOHN *WHAT *MARY *WHAT                                        JOHN CAN GO CAN
-   12: JOHN *WHAT *GO1 CAN                                           JOHN CAN GO CAN
-   21: *IX *HOMEWORK WONT *FUTURE *CAR *CAR *GO *TOMORROW            JOHN FISH WONT EAT BUT CAN EAT CHICKEN
-   25: *FRANK LIKE IX *WHO IX                                        JOHN LIKE IX IX IX
-   28: *IX *WHO *FUTURE *FUTURE IX                                   JOHN LIKE IX IX IX
-   30: *SHOULD LIKE *GO *MARY *GO                                    JOHN LIKE IX IX IX
-   36: *SOMETHING-ONE VEGETABLE *GIRL *GIVE *MARY *MARY              MARY VEGETABLE KNOW IX LIKE CORN1
-   40: *SUE *GIVE *DECIDE MARY *GO                                   JOHN IX THINK MARY LOVE
-   43: *IX *GO BUY HOUSE                                             JOHN MUST BUY HOUSE
-   50: *POSS *SEE BUY CAR *ARRIVE                                    FUTURE JOHN BUY CAR SHOULD
-   54: JOHN SHOULD *WHO BUY HOUSE                                    JOHN SHOULD NOT BUY HOUSE
-   57: *MARY *PREFER *MARY MARY                                      JOHN DECIDE VISIT MARY
-   67: *LIKE *MOTHER NOT BUY HOUSE                                   JOHN FUTURE NOT BUY HOUSE
-   71: JOHN *FINISH *GIVE1 MARY                                      JOHN WILL VISIT MARY
-   74: *GO *WHO *GO *GO                                              JOHN NOT VISIT MARY
-   77: *IX BLAME *LOVE                                               ANN BLAME MARY
-   84: *LOVE *GIVE1 *POSS BOOK                                       IX-1P FIND SOMETHING-ONE BOOK
-   89: *MAN *GIVE *WOMAN *IX IX *BUY *BOOK                           JOHN IX GIVE MAN IX NEW COAT
-   90: JOHN *GIVE1 IX *GIVE3 *GIVE1 *COAT                            JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-   92: JOHN *WOMAN *WOMAN *WOMAN WOMAN BOOK                          JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
+    2: JOHN *NEW HOMEWORK                                            JOHN WRITE HOMEWORK
+    7: JOHN CAN GO CAN                                               JOHN CAN GO CAN
+   12: JOHN *WHAT *JOHN CAN                                          JOHN CAN GO CAN
+   21: JOHN *HOMEWORK *JOHN *WHO *GIVE1 *WHAT *FUTURE *WHO           JOHN FISH WONT EAT BUT CAN EAT CHICKEN
+   25: JOHN *IX IX *WHO IX                                           JOHN LIKE IX IX IX
+   28: JOHN *FUTURE IX *FUTURE IX                                    JOHN LIKE IX IX IX
+   30: JOHN LIKE *MARY *MARY *MARY                                   JOHN LIKE IX IX IX
+   36: *IX *EAT *GIVE *GIVE *MARY *MARY                              MARY VEGETABLE KNOW IX LIKE CORN1
+   40: JOHN *GO *GIVE *JOHN *MARY                                    JOHN IX THINK MARY LOVE
+   43: JOHN *IX BUY HOUSE                                            JOHN MUST BUY HOUSE
+   50: *JOHN *SEE BUY CAR *JOHN                                      FUTURE JOHN BUY CAR SHOULD
+   54: JOHN SHOULD NOT BUY HOUSE                                     JOHN SHOULD NOT BUY HOUSE
+   57: *MARY *GO *GO MARY                                            JOHN DECIDE VISIT MARY
+   67: *SHOULD FUTURE *MARY BUY HOUSE                                JOHN FUTURE NOT BUY HOUSE
+   71: JOHN *FUTURE *GIVE1 MARY                                      JOHN WILL VISIT MARY
+   74: *IX *GO *GO MARY                                              JOHN NOT VISIT MARY
+   77: *JOHN *GIVE1 MARY                                             ANN BLAME MARY
+   84: *JOHN *GIVE1 *HOMEWORK *COAT                                  IX-1P FIND SOMETHING-ONE BOOK
+   89: *GIVE *GIVE *WOMAN *IX IX *ARRIVE *BOOK                       JOHN IX GIVE MAN IX NEW COAT
+   90: JOHN GIVE IX SOMETHING-ONE WOMAN *ARRIVE                      JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
+   92: JOHN *WOMAN IX *IX *IX BOOK                                   JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
   100: POSS NEW CAR BREAK-DOWN                                       POSS NEW CAR BREAK-DOWN
-  105: *FRANK *VEGETABLE                                             JOHN LEG
-  107: *LIKE *SOMETHING-ONE *HAVE *GO *WHO                           JOHN POSS FRIEND HAVE CANDY
-  108: *IX ARRIVE                                                    WOMAN ARRIVE
-  113: IX CAR *SUE *SOMETHING-ONE *ARRIVE                            IX CAR BLUE SUE BUY
-  119: *PREFER *BUY1 IX CAR *SOMETHING-ONE                           SUE BUY IX CAR BLUE
+  105: JOHN *SEE                                                     JOHN LEG
+  107: JOHN POSS *HAVE *GO *MARY                                     JOHN POSS FRIEND HAVE CANDY
+  108: *LOVE *LOVE                                                   WOMAN ARRIVE
+  113: IX CAR *IX *MARY *JOHN                                        IX CAR BLUE SUE BUY
+  119: *EAT *BUY1 IX *BLAME *IX                                      SUE BUY IX CAR BLUE
   122: JOHN *GIVE1 BOOK                                              JOHN READ BOOK
-  139: *SHOULD *BUY1 *CAR YESTERDAY BOOK                             JOHN BUY WHAT YESTERDAY BOOK
-  142: *FRANK BUY YESTERDAY WHAT BOOK                                JOHN BUY YESTERDAY WHAT BOOK
-  158: LOVE *MARY WHO                                                LOVE JOHN WHO
-  167: *MARY *SOMETHING-ONE *MARY LOVE *LOVE                         JOHN IX SAY LOVE MARY
-  171: *SOMETHING-ONE *SOMETHING-ONE BLAME                           JOHN MARY BLAME
-  174: *CAN *GIVE3 GIVE1 *GO *WHAT                                   PEOPLE GROUP GIVE1 JANA TOY
-  181: *SUE ARRIVE                                                   JOHN ARRIVE
-  184: *IX BOY *GIVE1 TEACHER APPLE                                  ALL BOY GIVE TEACHER APPLE
-  189: *SUE *SOMETHING-ONE *YESTERDAY *ARRIVE                        JOHN GIVE GIRL BOX
-  193: JOHN *SOMETHING-ONE *YESTERDAY BOX                            JOHN GIVE GIRL BOX
-  199: *FRANK CHOCOLATE WHO                                          LIKE CHOCOLATE WHO
-  201: JOHN *MAN *MAN *JOHN BUY HOUSE                                JOHN TELL MARY IX-1P BUY HOUSE
+  139: JOHN *ARRIVE WHAT *MARY *ARRIVE                               JOHN BUY WHAT YESTERDAY BOOK
+  142: JOHN BUY YESTERDAY WHAT BOOK                                  JOHN BUY YESTERDAY WHAT BOOK
+  158: LOVE JOHN WHO                                                 LOVE JOHN WHO
+  167: JOHN *MARY *VISIT LOVE MARY                                   JOHN IX SAY LOVE MARY
+  171: *IX MARY BLAME                                                JOHN MARY BLAME
+  174: *JOHN GROUP GIVE1 *YESTERDAY *JOHN                            PEOPLE GROUP GIVE1 JANA TOY
+  181: *EAT ARRIVE                                                   JOHN ARRIVE
+  184: ALL BOY *GIVE1 TEACHER *YESTERDAY                             ALL BOY GIVE TEACHER APPLE
+  189: *MARY *GO *YESTERDAY BOX                                      JOHN GIVE GIRL BOX
+  193: JOHN *GO *YESTERDAY BOX                                       JOHN GIVE GIRL BOX
+  199: *JOHN *STUDENT *GO                                            LIKE CHOCOLATE WHO
+  201: JOHN *MAN *WOMAN *JOHN BUY HOUSE                              JOHN TELL MARY IX-1P BUY HOUSE
 
 WER results: delta and DIC
 
@@ -15461,93 +15464,115 @@ WER results: delta and DIC
 Total correct: 64 out of 178
 Video  Recognized                                                    Correct
 =====================================================================================================
-    2: JOHN *JOHN HOMEWORK                                           JOHN WRITE HOMEWORK
-    7: JOHN *HAVE *GIVE1 *TEACHER                                    JOHN CAN GO CAN
-   12: JOHN CAN *GO1 CAN                                             JOHN CAN GO CAN
-   21: *MARY *MARY *JOHN *MARY *CAR *GO *FUTURE *MARY                JOHN FISH WONT EAT BUT CAN EAT CHICKEN
-   25: JOHN *MARY *JOHN IX *MARY                                     JOHN LIKE IX IX IX
-   28: JOHN *MARY *MARY IX IX                                        JOHN LIKE IX IX IX
-   30: JOHN *MARY *JOHN *JOHN IX                                     JOHN LIKE IX IX IX
-   36: MARY *JOHN *JOHN IX *MARY *MARY                               MARY VEGETABLE KNOW IX LIKE CORN1
-   40: *MARY IX *MARY MARY *MARY                                     JOHN IX THINK MARY LOVE
-   43: JOHN *JOHN *FINISH HOUSE                                      JOHN MUST BUY HOUSE
+    2: JOHN *GIVE1 HOMEWORK                                          JOHN WRITE HOMEWORK
+    7: JOHN *DECIDE *GIVE1 *ARRIVE                                   JOHN CAN GO CAN
+   12: JOHN *BOX *JOHN CAN                                           JOHN CAN GO CAN
+   21: JOHN *MARY *LOVE *MARY *HOUSE *FUTURE *FUTURE *MARY           JOHN FISH WONT EAT BUT CAN EAT CHICKEN
+   25: JOHN *IX *JOHN IX IX                                          JOHN LIKE IX IX IX
+   28: JOHN *MARY *JOHN IX IX                                        JOHN LIKE IX IX IX
+   30: JOHN *IX *SEE *JOHN IX                                        JOHN LIKE IX IX IX
+   36: *JOHN *JOHN *JOHN *GIVE *MARY *MARY                           MARY VEGETABLE KNOW IX LIKE CORN1
+   40: *MARY IX *JOHN MARY *MARY                                     JOHN IX THINK MARY LOVE
+   43: JOHN *IX BUY HOUSE                                            JOHN MUST BUY HOUSE
    50: *JOHN JOHN BUY CAR *MARY                                      FUTURE JOHN BUY CAR SHOULD
-   54: JOHN *MARY *MARY BUY HOUSE                                    JOHN SHOULD NOT BUY HOUSE
-   57: JOHN *JOHN *IX *JOHN                                          JOHN DECIDE VISIT MARY
-   67: JOHN *JOHN *JOHN BUY HOUSE                                    JOHN FUTURE NOT BUY HOUSE
-   71: JOHN *JOHN VISIT MARY                                         JOHN WILL VISIT MARY
-   74: JOHN *JOHN *MARY MARY                                         JOHN NOT VISIT MARY
-   77: *JOHN BLAME MARY                                              ANN BLAME MARY
-   84: *JOHN *GO *IX *WHAT                                           IX-1P FIND SOMETHING-ONE BOOK
-   89: *GIVE1 *JOHN *IX *JOHN IX *WHAT *HOUSE                        JOHN IX GIVE MAN IX NEW COAT
-   90: *MARY *JOHN *JOHN *IX *IX *MARY                               JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-   92: JOHN *MARY *JOHN *JOHN WOMAN *ARRIVE                          JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-  100: *JOHN NEW *WHAT BREAK-DOWN                                    POSS NEW CAR BREAK-DOWN
-  105: JOHN *MARY                                                    JOHN LEG
-  107: JOHN POSS FRIEND *LOVE *MARY                                  JOHN POSS FRIEND HAVE CANDY
-  108: *JOHN ARRIVE                                                  WOMAN ARRIVE
+   54: JOHN *JOHN *JOHN BUY HOUSE                                    JOHN SHOULD NOT BUY HOUSE
+   57: *MARY *JOHN *IX *IX                                           JOHN DECIDE VISIT MARY
+   67: JOHN *JOHN *MARY BUY HOUSE                                    JOHN FUTURE NOT BUY HOUSE
+   71: JOHN *MARY VISIT *CAR                                         JOHN WILL VISIT MARY
+   74: JOHN *JOHN *IX MARY                                           JOHN NOT VISIT MARY
+   77: *JOHN *ARRIVE MARY                                            ANN BLAME MARY
+   84: *GO *CAR *IX *LOVE                                            IX-1P FIND SOMETHING-ONE BOOK
+   89: *MARY *JOHN *IX *IX *JOHN *WHAT COAT                          JOHN IX GIVE MAN IX NEW COAT
+   90: JOHN *JOHN *JOHN *IX *IX *MARY                                JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
+   92: JOHN *IX *JOHN *IX *IX *MARY                                  JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
+  100: *JOHN *ARRIVE CAR *HOUSE                                      POSS NEW CAR BREAK-DOWN
+  105: JOHN *JOHN                                                    JOHN LEG
+  107: JOHN *JOHN *ARRIVE *MARY *JOHN                                JOHN POSS FRIEND HAVE CANDY
+  108: *JOHN *LOVE                                                   WOMAN ARRIVE
   113: *JOHN CAR *MARY *MARY *GIVE1                                  IX CAR BLUE SUE BUY
-  119: *JOHN *BUY1 IX CAR *IX                                        SUE BUY IX CAR BLUE
-  122: JOHN *VISIT *YESTERDAY                                        JOHN READ BOOK
-  139: JOHN *BUY1 WHAT *MARY *ARRIVE                                 JOHN BUY WHAT YESTERDAY BOOK
-  142: JOHN BUY *MARY *MARY *YESTERDAY                               JOHN BUY YESTERDAY WHAT BOOK
-  158: *BOY *WHO *MARY                                               LOVE JOHN WHO
-  167: *MARY *MARY *IX *ARRIVE *WHAT                                 JOHN IX SAY LOVE MARY
+  119: *JOHN *GIVE1 IX CAR *MARY                                     SUE BUY IX CAR BLUE
+  122: JOHN *BOY *WHAT                                               JOHN READ BOOK
+  139: JOHN *GIVE1 WHAT *JOHN *WHAT                                  JOHN BUY WHAT YESTERDAY BOOK
+  142: JOHN BUY *JOHN WHAT *WHAT                                     JOHN BUY YESTERDAY WHAT BOOK
+  158: *BOY JOHN *JOHN                                               LOVE JOHN WHO
+  167: JOHN IX *IX *WHAT MARY                                        JOHN IX SAY LOVE MARY
   171: JOHN *JOHN BLAME                                              JOHN MARY BLAME
-  174: *GIVE1 *MARY GIVE1 *MARY *FINISH                              PEOPLE GROUP GIVE1 JANA TOY
-  181: JOHN *GIVE1                                                   JOHN ARRIVE
-  184: *IX *WHO *GIVE1 *HAVE *MARY                                   ALL BOY GIVE TEACHER APPLE
-  189: JOHN *IX *MARY *VISIT                                         JOHN GIVE GIRL BOX
-  193: JOHN *IX *IX BOX                                              JOHN GIVE GIRL BOX
-  199: *JOHN *ARRIVE *MARY                                           LIKE CHOCOLATE WHO
-  201: JOHN *MARY MARY *LIKE *VISIT HOUSE                            JOHN TELL MARY IX-1P BUY HOUSE
+  174: *GIVE1 *LOVE GIVE1 *JOHN *CAR                                 PEOPLE GROUP GIVE1 JANA TOY
+  181: JOHN ARRIVE                                                   JOHN ARRIVE
+  184: *IX *JOHN *GIVE1 TEACHER *MARY                                ALL BOY GIVE TEACHER APPLE
+  189: JOHN *JOHN *JOHN *ARRIVE                                      JOHN GIVE GIRL BOX
+  193: JOHN *IX *LIKE BOX                                            JOHN GIVE GIRL BOX</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/Users/andriitsok/anaconda3/envs/ai.tsok.sign-language/lib/python3.6/site-packages/hmmlearn/hmm.py:256: RuntimeWarning: invalid value encountered in true_divide
+  / (means_weight + denom))
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+  199: *JOHN *WHAT *MARY                                             LIKE CHOCOLATE WHO
+  201: JOHN *IX *JOHN *JOHN BUY HOUSE                                JOHN TELL MARY IX-1P BUY HOUSE
 
 WER results: custom and DIC
 
-**** WER = 0.6629213483146067
-Total correct: 60 out of 178
+**** WER = 0.5561797752808989
+Total correct: 79 out of 178
 Video  Recognized                                                    Correct
 =====================================================================================================
     2: *FUTURE1 WRITE HOMEWORK                                       JOHN WRITE HOMEWORK
-    7: *IX *PEOPLE *MARY *TOY                                        JOHN CAN GO CAN
+    7: *MARY *PEOPLE *MARY *TOY                                      JOHN CAN GO CAN
    12: JOHN CAN *GO1 CAN                                             JOHN CAN GO CAN
-   21: *ANN FISH WONT *PREFER BUT *PARTY *CHICKEN *TOMORROW          JOHN FISH WONT EAT BUT CAN EAT CHICKEN
-   25: *ANN LIKE *ANN *LIKE *ANN                                     JOHN LIKE IX IX IX
-   28: *ANN LIKE *ANN *LIKE *ANN                                     JOHN LIKE IX IX IX
-   30: *LIKE LIKE *LIKE *LIKE *MARY                                  JOHN LIKE IX IX IX
-   36: MARY *JANA *THINK *MARY LIKE *LIKE                            MARY VEGETABLE KNOW IX LIKE CORN1
-   40: *JANA *MARY *CORN *VEGETABLE *FRANK                           JOHN IX THINK MARY LOVE
-   43: *ANN *PREFER BUY HOUSE                                        JOHN MUST BUY HOUSE
-   50: *FRANK *POSS *WRITE *GIVE3 *HIT                               FUTURE JOHN BUY CAR SHOULD
-   54: JOHN SHOULD *FUTURE BUY HOUSE                                 JOHN SHOULD NOT BUY HOUSE
-   57: *MARY *OLD *GIVE2 *GIVE2                                      JOHN DECIDE VISIT MARY
-   67: *LIKE *KNOW *PREFER *STUDENT HOUSE                            JOHN FUTURE NOT BUY HOUSE
+   21: JOHN FISH *WHO *NOT BUT *BLAME *CHICKEN *WHO                  JOHN FISH WONT EAT BUT CAN EAT CHICKEN
+   25: *ANN *WHO *ANN *WHO *ANN                                      JOHN LIKE IX IX IX
+   28: *ANN *WHO *MARY *ANN *ANN                                     JOHN LIKE IX IX IX
+   30: *IX LIKE *MARY *LIKE IX                                       JOHN LIKE IX IX IX
+   36: MARY *MARY *GIVE1 *WOMAN LIKE *IX                             MARY VEGETABLE KNOW IX LIKE CORN1
+   40: JOHN *VISIT *SELF *VEGETABLE *MARY                            JOHN IX THINK MARY LOVE
+   43: JOHN *FUTURE BUY HOUSE                                        JOHN MUST BUY HOUSE
+   50: *FRANK *POSS *WRITE CAR *HIT                                  FUTURE JOHN BUY CAR SHOULD
+   54: JOHN SHOULD *WILL BUY HOUSE                                   JOHN SHOULD NOT BUY HOUSE
+   57: *IX *OLD VISIT *GIVE2                                         JOHN DECIDE VISIT MARY
+   67: JOHN FUTURE *FUTURE *STUDENT HOUSE                            JOHN FUTURE NOT BUY HOUSE
    71: JOHN WILL *BLAME MARY                                         JOHN WILL VISIT MARY
-   74: *MARY *WHO *MARY *FRANK                                       JOHN NOT VISIT MARY
-   77: ANN BLAME *LOVE                                               ANN BLAME MARY
-   84: *ANN *ARRIVE *HOMEWORK BOOK                                   IX-1P FIND SOMETHING-ONE BOOK
-   89: *THINK *WILL *WILL *SOMETHING-ONE IX *NEW-YORK COAT           JOHN IX GIVE MAN IX NEW COAT
-   90: *WHO *IX IX *IX *CORN *CHOCOLATE                              JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-   92: *FRANK *THINK *WOMAN *WOMAN WOMAN BOOK                        JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
+   74: *IX *WHO VISIT MARY                                           JOHN NOT VISIT MARY
+   77: ANN BLAME MARY                                                ANN BLAME MARY
+   84: *ANN *STUDENT *GIVE1 BOOK                                     IX-1P FIND SOMETHING-ONE BOOK
+   89: *THINK *SOMETHING-ONE *SAY *WOMAN *SOMETHING-ONE *BOOK COAT   JOHN IX GIVE MAN IX NEW COAT
+   90: *MARY *GIVE1 IX *IX WOMAN BOOK                                JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
+   92: JOHN *GIVE1 *SOMETHING-ONE SOMETHING-ONE WOMAN BOOK           JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
   100: POSS NEW CAR BREAK-DOWN                                       POSS NEW CAR BREAK-DOWN
-  105: *FRANK *SEE                                                   JOHN LEG
-  107: *MARY POSS FRIEND *BLUE *JANA                                 JOHN POSS FRIEND HAVE CANDY
+  105: JOHN *JOHN                                                    JOHN LEG
+  107: *MARY POSS FRIEND *BLUE *JOHN                                 JOHN POSS FRIEND HAVE CANDY
   108: *THINK *LAST-WEEK                                             WOMAN ARRIVE
-  113: *SHOOT CAR BLUE SUE *BUY1                                     IX CAR BLUE SUE BUY
-  119: *VEGETABLE *BUY1 *BLUE *BLAME *SELF                           SUE BUY IX CAR BLUE
-  122: JOHN READ *COAT                                               JOHN READ BOOK
-  139: *SHOOT *BUY1 *TOY YESTERDAY *CHOCOLATE                        JOHN BUY WHAT YESTERDAY BOOK
-  142: *FRANK BUY YESTERDAY *HAVE BOOK                               JOHN BUY YESTERDAY WHAT BOOK
+  113: *SHOOT CAR BLUE *IX *BUY1                                     IX CAR BLUE SUE BUY
+  119: *VEGETABLE *BUY1 *BLUE *BLAME *POSS                           SUE BUY IX CAR BLUE
+  122: JOHN READ BOOK                                                JOHN READ BOOK
+  139: JOHN *BUY1 WHAT YESTERDAY BOOK                                JOHN BUY WHAT YESTERDAY BOOK
+  142: JOHN *ARRIVE YESTERDAY WHAT BOOK                              JOHN BUY YESTERDAY WHAT BOOK
   158: LOVE *MARY WHO                                                LOVE JOHN WHO
-  167: *MARY *MARY *MARY LOVE *LEAVE                                 JOHN IX SAY LOVE MARY
+  167: JOHN *MARY SAY LOVE *LOVE                                     JOHN IX SAY LOVE MARY
   171: *MARY *TOY1 BLAME                                             JOHN MARY BLAME
-  174: *LIVE GROUP GIVE1 *WHO TOY                                    PEOPLE GROUP GIVE1 JANA TOY
+  174: *LIVE GROUP GIVE1 *CORN TOY                                   PEOPLE GROUP GIVE1 JANA TOY
   181: *SUE *BOX                                                     JOHN ARRIVE
   184: *THROW BOY *GIVE1 TEACHER APPLE                               ALL BOY GIVE TEACHER APPLE
-  189: *JANA *SEE *CORN *CAN                                         JOHN GIVE GIRL BOX
+  189: *MARY *SELF *CORN *BUY1                                       JOHN GIVE GIRL BOX
   193: JOHN *SELF *CORN BOX                                          JOHN GIVE GIRL BOX
-  199: *ANN *HOMEWORK *TELL                                          LIKE CHOCOLATE WHO
-  201: *FRANK *THINK *WOMAN *LIKE BUY HOUSE                          JOHN TELL MARY IX-1P BUY HOUSE
+  199: *ANN *VIDEOTAPE *TELL                                         LIKE CHOCOLATE WHO
+  201: JOHN *GIVE1 *WOMAN *LOVE BUY HOUSE                            JOHN TELL MARY IX-1P BUY HOUSE
 
 WER results: ground and VC
 
@@ -15786,238 +15811,260 @@ Video  Recognized                                                    Correct
 
 WER results: ground and BIC
 
-**** WER = 0.6741573033707865
-Total correct: 58 out of 178
+**** WER = 0.5449438202247191
+Total correct: 81 out of 178
 Video  Recognized                                                    Correct
 =====================================================================================================
-    2: *GO *BOOK *ARRIVE                                             JOHN WRITE HOMEWORK
-    7: *SOMETHING-ONE *GO1 *IX CAN                                   JOHN CAN GO CAN
-   12: JOHN *HAVE *WHAT CAN                                          JOHN CAN GO CAN
-   21: JOHN *HOMEWORK *NEW *PREFER *CAR *CAR *FUTURE *EAT            JOHN FISH WONT EAT BUT CAN EAT CHICKEN
-   25: *FRANK *TELL *LOVE *TELL *LOVE                                JOHN LIKE IX IX IX
-   28: *FRANK *TELL *LOVE *TELL *LOVE                                JOHN LIKE IX IX IX
-   30: *SHOULD LIKE *GO *GO *GO                                      JOHN LIKE IX IX IX
-   36: *VISIT VEGETABLE *YESTERDAY *GIVE *MARY *MARY                 MARY VEGETABLE KNOW IX LIKE CORN1
-   40: *SUE *GIVE *CORN *VEGETABLE *GO                               JOHN IX THINK MARY LOVE
-   43: *FRANK *GO BUY HOUSE                                          JOHN MUST BUY HOUSE
-   50: *FRANK *SEE BUY CAR *SOMETHING-ONE                            FUTURE JOHN BUY CAR SHOULD
-   54: JOHN SHOULD *WHO BUY HOUSE                                    JOHN SHOULD NOT BUY HOUSE
-   57: *MARY *VISIT VISIT *VISIT                                     JOHN DECIDE VISIT MARY
-   67: *LIKE FUTURE NOT BUY HOUSE                                    JOHN FUTURE NOT BUY HOUSE
-   71: JOHN *FINISH VISIT MARY                                       JOHN WILL VISIT MARY
-   74: *IX *VISIT *GO *GO                                            JOHN NOT VISIT MARY
+    2: JOHN WRITE HOMEWORK                                           JOHN WRITE HOMEWORK
+    7: *SOMETHING-ONE *GO1 GO *ARRIVE                                JOHN CAN GO CAN
+   12: *IX *WHAT *CAN CAN                                            JOHN CAN GO CAN
+   21: JOHN *HOMEWORK *JOHN *FUTURE *CAR *TEACHER *VISIT *WHO        JOHN FISH WONT EAT BUT CAN EAT CHICKEN
+   25: JOHN *IX IX *LIKE IX                                          JOHN LIKE IX IX IX
+   28: JOHN *WHO IX *LIKE *LOVE                                      JOHN LIKE IX IX IX
+   30: JOHN LIKE *MARY *MARY *MARY                                   JOHN LIKE IX IX IX
+   36: *VISIT *VISIT *IX *GIVE *MARY *IX                             MARY VEGETABLE KNOW IX LIKE CORN1
+   40: *SUE *GO *GIVE MARY *MARY                                     JOHN IX THINK MARY LOVE
+   43: JOHN *IX BUY HOUSE                                            JOHN MUST BUY HOUSE
+   50: *FRANK *SEE BUY CAR *NEW                                      FUTURE JOHN BUY CAR SHOULD
+   54: JOHN SHOULD NOT BUY HOUSE                                     JOHN SHOULD NOT BUY HOUSE
+   57: *MARY *VISIT VISIT MARY                                       JOHN DECIDE VISIT MARY
+   67: *SHOULD *JOHN *WHO BUY HOUSE                                  JOHN FUTURE NOT BUY HOUSE
+   71: JOHN *FUTURE VISIT MARY                                       JOHN WILL VISIT MARY
+   74: *IX *VISIT VISIT MARY                                         JOHN NOT VISIT MARY
    77: *JOHN BLAME *LOVE                                             ANN BLAME MARY
-   84: *LOVE *ARRIVE *HOMEWORK BOOK                                  IX-1P FIND SOMETHING-ONE BOOK
-   89: *GIVE *GIVE GIVE *IX IX *ARRIVE *BOOK                         JOHN IX GIVE MAN IX NEW COAT
-   90: *SOMETHING-ONE *SOMETHING-ONE IX *IX WOMAN *COAT              JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-   92: *FRANK GIVE *WOMAN *WOMAN WOMAN BOOK                          JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-  100: POSS NEW CAR BREAK-DOWN                                       POSS NEW CAR BREAK-DOWN
-  105: *FRANK *VEGETABLE                                             JOHN LEG
-  107: *SHOULD *IX FRIEND *GO *JANA                                  JOHN POSS FRIEND HAVE CANDY
-  108: *GIVE *LOVE                                                   WOMAN ARRIVE
-  113: IX CAR *CAR *IX *IX                                           IX CAR BLUE SUE BUY
-  119: *PREFER *BUY1 IX *BLAME *IX                                   SUE BUY IX CAR BLUE
-  122: JOHN *GIVE1 *COAT                                             JOHN READ BOOK
-  139: *SHOULD *BUY1 *CAR *BLAME BOOK                                JOHN BUY WHAT YESTERDAY BOOK
-  142: *FRANK *STUDENT YESTERDAY *TEACHER BOOK                       JOHN BUY YESTERDAY WHAT BOOK
-  158: LOVE *MARY WHO                                                LOVE JOHN WHO
-  167: *MARY IX *VISIT *WOMAN *LOVE                                  JOHN IX SAY LOVE MARY
-  171: *VISIT *VISIT BLAME                                           JOHN MARY BLAME
-  174: *CAN *GIVE3 GIVE1 *APPLE *WHAT                                PEOPLE GROUP GIVE1 JANA TOY
-  181: *BLAME ARRIVE                                                 JOHN ARRIVE
-  184: *GIVE1 BOY *GIVE1 TEACHER APPLE                               ALL BOY GIVE TEACHER APPLE
-  189: *JANA *SOMETHING-ONE *YESTERDAY *WHAT                         JOHN GIVE GIRL BOX
-  193: JOHN *SOMETHING-ONE *YESTERDAY BOX                            JOHN GIVE GIRL BOX
-  199: *LOVE CHOCOLATE WHO                                           LIKE CHOCOLATE WHO
-  201: JOHN *GIVE *GIVE *LOVE *ARRIVE HOUSE                          JOHN TELL MARY IX-1P BUY HOUSE
+   84: *JOHN *ARRIVE *HOMEWORK BOOK                                  IX-1P FIND SOMETHING-ONE BOOK
+   89: *MARY *POSS *IX *IX IX *ARRIVE *BOOK                          JOHN IX GIVE MAN IX NEW COAT
+   90: JOHN *ALL IX *IX *VISIT *HERE                                 JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
+   92: JOHN *SHOULD IX *IX *IX BOOK                                  JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
+  100: *IX NEW CAR BREAK-DOWN                                        POSS NEW CAR BREAK-DOWN
+  105: JOHN *SEE                                                     JOHN LEG
+  107: JOHN *GO *ARRIVE HAVE *JANA                                   JOHN POSS FRIEND HAVE CANDY
+  108: *WHO *LOVE                                                    WOMAN ARRIVE
+  113: IX CAR *CAR *MARY *BOX                                        IX CAR BLUE SUE BUY
+  119: *VISIT *BUY1 IX *BOX *GO                                      SUE BUY IX CAR BLUE
+  122: JOHN *GIVE1 BOOK                                              JOHN READ BOOK
+  139: JOHN *BUY1 WHAT *GIVE1 BOOK                                   JOHN BUY WHAT YESTERDAY BOOK
+  142: JOHN *STUDENT YESTERDAY WHAT BOOK                             JOHN BUY YESTERDAY WHAT BOOK
+  158: LOVE JOHN WHO                                                 LOVE JOHN WHO
+  167: JOHN *MARY *VISIT LOVE MARY                                   JOHN IX SAY LOVE MARY
+  171: JOHN MARY BLAME                                               JOHN MARY BLAME
+  174: *CAN *GIVE1 GIVE1 *YESTERDAY *WHAT                            PEOPLE GROUP GIVE1 JANA TOY
+  181: JOHN *BOX                                                     JOHN ARRIVE
+  184: *GIVE BOY *GIVE1 TEACHER APPLE                                ALL BOY GIVE TEACHER APPLE
+  189: JOHN *SOMETHING-ONE *VISIT BOX                                JOHN GIVE GIRL BOX
+  193: JOHN *SOMETHING-ONE *VISIT BOX                                JOHN GIVE GIRL BOX
+  199: *JOHN CHOCOLATE *GO                                           LIKE CHOCOLATE WHO
+  201: JOHN *MARY *LOVE *JOHN BUY HOUSE                              JOHN TELL MARY IX-1P BUY HOUSE
 
 WER results: norm and BIC
 
-**** WER = 0.6235955056179775
-Total correct: 67 out of 178
+**** WER = 0.6123595505617978
+Total correct: 69 out of 178
 Video  Recognized                                                    Correct
 =====================================================================================================
-    2: *MARY WRITE *ARRIVE                                           JOHN WRITE HOMEWORK
-    7: JOHN *NEW *JOHN CAN                                           JOHN CAN GO CAN
-   12: *SHOULD *HAVE *GO1 CAN                                        JOHN CAN GO CAN
-   21: *LIKE *NEW *HAVE *IX-1P *CAR *BLAME *CHICKEN *WRITE           JOHN FISH WONT EAT BUT CAN EAT CHICKEN
-   25: *IX LIKE *LIKE *LIKE IX                                       JOHN LIKE IX IX IX
-   28: *ANN LIKE *ANN *LIKE *ANN                                     JOHN LIKE IX IX IX
-   30: *SHOOT LIKE *LOVE *LIKE *MARY                                 JOHN LIKE IX IX IX
-   36: *LEAVE *NOT *YESTERDAY *VISIT LIKE *JOHN                      MARY VEGETABLE KNOW IX LIKE CORN1
-   40: JOHN *LEAVE *FUTURE1 *VEGETABLE LOVE                          JOHN IX THINK MARY LOVE
-   43: JOHN *SHOULD BUY HOUSE                                        JOHN MUST BUY HOUSE
-   50: *FRANK *SEE *ARRIVE CAR *CAR                                  FUTURE JOHN BUY CAR SHOULD
-   54: JOHN SHOULD *FUTURE *STUDENT HOUSE                            JOHN SHOULD NOT BUY HOUSE
-   57: *MARY *MARY *MARY MARY                                        JOHN DECIDE VISIT MARY
-   67: *IX-1P FUTURE *JOHN *ARRIVE HOUSE                             JOHN FUTURE NOT BUY HOUSE
+    2: JOHN WRITE *ARRIVE                                            JOHN WRITE HOMEWORK
+    7: *MARY *NEW GO *WHAT                                           JOHN CAN GO CAN
+   12: *MARY *HAVE *GO1 CAN                                          JOHN CAN GO CAN
+   21: *MARY *BOX *HAVE *GO *CAR *CAR *CHICKEN *WRITE                JOHN FISH WONT EAT BUT CAN EAT CHICKEN
+   25: JOHN LIKE *LOVE *LIKE IX                                      JOHN LIKE IX IX IX
+   28: *ANN *ANN *ANN *ANN *ANN                                      JOHN LIKE IX IX IX
+   30: *IX-1P *IX *MARY IX IX                                        JOHN LIKE IX IX IX
+   36: MARY *MARY *YESTERDAY *SHOOT LIKE *IX                         MARY VEGETABLE KNOW IX LIKE CORN1
+   40: *MARY *JOHN *FUTURE1 *VEGETABLE *MARY                         JOHN IX THINK MARY LOVE
+   43: JOHN *FUTURE BUY HOUSE                                        JOHN MUST BUY HOUSE
+   50: *POSS *SEE *WRITE CAR *CAR                                    FUTURE JOHN BUY CAR SHOULD
+   54: JOHN *FUTURE *FUTURE *STUDENT HOUSE                           JOHN SHOULD NOT BUY HOUSE
+   57: *IX *IX *IX MARY                                              JOHN DECIDE VISIT MARY
+   67: *MARY *IX *JOHN *ARRIVE HOUSE                                 JOHN FUTURE NOT BUY HOUSE
    71: JOHN WILL VISIT MARY                                          JOHN WILL VISIT MARY
-   74: *WOMAN *VISIT VISIT *FRANK                                    JOHN NOT VISIT MARY
-   77: *IX BLAME MARY                                                ANN BLAME MARY
-   84: *IX *ARRIVE *NEW BOOK                                         IX-1P FIND SOMETHING-ONE BOOK
-   89: *FUTURE *THROW *JOHN *JOHN *WOMAN *BOOK *BREAK-DOWN           JOHN IX GIVE MAN IX NEW COAT
-   90: *SELF *GIVE1 IX *IX WOMAN *CHOCOLATE                          JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-   92: JOHN *GIVE1 IX *IX WOMAN BOOK                                 JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
+   74: *IX *BILL VISIT MARY                                          JOHN NOT VISIT MARY
+   77: *JOHN BLAME MARY                                              ANN BLAME MARY
+   84: *JOHN *HAVE *VISIT BOOK                                       IX-1P FIND SOMETHING-ONE BOOK
+   89: *FUTURE *THROW *IX *IX IX *ARRIVE *BREAK-DOWN                 JOHN IX GIVE MAN IX NEW COAT
+   90: *SELF *YESTERDAY IX *IX WOMAN *CHOCOLATE                      JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
+   92: JOHN *WOMAN *WOMAN *WOMAN WOMAN BOOK                          JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
   100: POSS NEW CAR BREAK-DOWN                                       POSS NEW CAR BREAK-DOWN
-  105: *WHO *SEE                                                     JOHN LEG
-  107: *TELL *IX *BOX *LIKE *JANA                                    JOHN POSS FRIEND HAVE CANDY
-  108: *LOVE *HOMEWORK                                               WOMAN ARRIVE
-  113: IX CAR *IX SUE *HAVE                                          IX CAR BLUE SUE BUY
-  119: *VEGETABLE *BUY1 IX CAR *GO                                   SUE BUY IX CAR BLUE
-  122: JOHN *HOUSE *COAT                                             JOHN READ BOOK
+  105: JOHN *FUTURE                                                  JOHN LEG
+  107: *MARY POSS *BOX *MARY *TOY1                                   JOHN POSS FRIEND HAVE CANDY
+  108: *IX *JOHN                                                     WOMAN ARRIVE
+  113: IX CAR *IX *JOHN *BOX                                         IX CAR BLUE SUE BUY
+  119: SUE *BUY1 IX CAR *FINISH                                      SUE BUY IX CAR BLUE
+  122: JOHN *GIVE1 BOOK                                              JOHN READ BOOK
   139: JOHN *BUY1 *CAR YESTERDAY BOOK                                JOHN BUY WHAT YESTERDAY BOOK
   142: JOHN BUY YESTERDAY WHAT BOOK                                  JOHN BUY YESTERDAY WHAT BOOK
-  158: LOVE *MARY *CORN                                              LOVE JOHN WHO
-  167: JOHN *JOHN *SAY-1P LOVE MARY                                  JOHN IX SAY LOVE MARY
-  171: *SHOOT *JOHN BLAME                                            JOHN MARY BLAME
-  174: *NEW *GIVE1 GIVE1 *WHO *CAR                                   PEOPLE GROUP GIVE1 JANA TOY
+  158: LOVE *IX WHO                                                  LOVE JOHN WHO
+  167: *MARY IX *SAY-1P LOVE *IX                                     JOHN IX SAY LOVE MARY
+  171: *MARY *IX BLAME                                               JOHN MARY BLAME
+  174: *NEW *GIVE1 GIVE1 *VISIT *CAR                                 PEOPLE GROUP GIVE1 JANA TOY
   181: JOHN *BOX                                                     JOHN ARRIVE
-  184: *IX *IX *GIVE1 TEACHER APPLE                                  ALL BOY GIVE TEACHER APPLE
-  189: *JANA *SEE *PREFER *ARRIVE                                    JOHN GIVE GIRL BOX
-  193: JOHN *SEE *YESTERDAY BOX                                      JOHN GIVE GIRL BOX
+  184: *IX BOY *GIVE1 TEACHER APPLE                                  ALL BOY GIVE TEACHER APPLE
+  189: *JANA *MARY *PREFER *ARRIVE                                   JOHN GIVE GIRL BOX
+  193: *IX *YESTERDAY *YESTERDAY BOX                                 JOHN GIVE GIRL BOX
   199: *JOHN CHOCOLATE *JOHN                                         LIKE CHOCOLATE WHO
-  201: JOHN *THINK *WOMAN *WOMAN *STUDENT HOUSE                      JOHN TELL MARY IX-1P BUY HOUSE
+  201: JOHN *GIVE1 *WOMAN *WOMAN *STUDENT HOUSE                      JOHN TELL MARY IX-1P BUY HOUSE
 
 WER results: polar and BIC
 
+**** WER = 0.5393258426966292
+Total correct: 82 out of 178
+Video  Recognized                                                    Correct
+=====================================================================================================
+    2: *GO WRITE *NEW                                                JOHN WRITE HOMEWORK
+    7: JOHN *PEOPLE GO *ARRIVE                                       JOHN CAN GO CAN
+   12: JOHN *WHAT *GO1 CAN                                           JOHN CAN GO CAN
+   21: JOHN *HOMEWORK WONT *NOT *GIVE1 *TEACHER *FUTURE *WHO         JOHN FISH WONT EAT BUT CAN EAT CHICKEN
+   25: JOHN LIKE *LOVE *WHO IX                                       JOHN LIKE IX IX IX
+   28: JOHN *WHO *FUTURE *WHO IX                                     JOHN LIKE IX IX IX
+   30: JOHN LIKE *MARY *MARY *MARY                                   JOHN LIKE IX IX IX
+   36: *VISIT VEGETABLE *GIRL *GIVE *MARY *MARY                      MARY VEGETABLE KNOW IX LIKE CORN1
+   40: JOHN *VISIT *FUTURE1 *JOHN *MARY                              JOHN IX THINK MARY LOVE
+   43: JOHN *FUTURE BUY HOUSE                                        JOHN MUST BUY HOUSE
+   50: *JOHN *SEE *STUDENT CAR *JOHN                                 FUTURE JOHN BUY CAR SHOULD
+   54: JOHN SHOULD *WHO BUY HOUSE                                    JOHN SHOULD NOT BUY HOUSE
+   57: *MARY *VISIT VISIT MARY                                       JOHN DECIDE VISIT MARY
+   67: *SHOULD FUTURE *MARY BUY HOUSE                                JOHN FUTURE NOT BUY HOUSE
+   71: JOHN *FINISH *GIVE1 MARY                                      JOHN WILL VISIT MARY
+   74: *IX *VISIT *GIVE MARY                                         JOHN NOT VISIT MARY
+   77: *JOHN BLAME *LOVE                                             ANN BLAME MARY
+   84: *BLAME *GIVE1 *GIVE1 BOOK                                     IX-1P FIND SOMETHING-ONE BOOK
+   89: *GIVE *GIVE *WOMAN *WOMAN IX *ARRIVE *BREAK-DOWN              JOHN IX GIVE MAN IX NEW COAT
+   90: JOHN *HAVE IX SOMETHING-ONE *VISIT BOOK                       JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
+   92: JOHN *WOMAN IX *WOMAN WOMAN BOOK                              JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
+  100: POSS NEW CAR BREAK-DOWN                                       POSS NEW CAR BREAK-DOWN
+  105: JOHN *VEGETABLE                                               JOHN LEG
+  107: JOHN *IX *HAVE *GO *JANA                                      JOHN POSS FRIEND HAVE CANDY
+  108: *JOHN *LOVE                                                   WOMAN ARRIVE
+  113: IX CAR *IX *IX *BUY1                                          IX CAR BLUE SUE BUY
+  119: *PREFER *BUY1 *CAR CAR *GO                                    SUE BUY IX CAR BLUE
+  122: JOHN *GIVE1 BOOK                                              JOHN READ BOOK
+  139: JOHN *BUY1 WHAT *BLAME *CHOCOLATE                             JOHN BUY WHAT YESTERDAY BOOK
+  142: JOHN BUY YESTERDAY WHAT BOOK                                  JOHN BUY YESTERDAY WHAT BOOK
+  158: LOVE JOHN WHO                                                 LOVE JOHN WHO
+  167: JOHN IX *VISIT LOVE MARY                                      JOHN IX SAY LOVE MARY
+  171: JOHN *IX BLAME                                                JOHN MARY BLAME
+  174: *JOHN *GIVE3 GIVE1 *YESTERDAY *JOHN                           PEOPLE GROUP GIVE1 JANA TOY
+  181: *EAT ARRIVE                                                   JOHN ARRIVE
+  184: ALL BOY *GIVE1 TEACHER APPLE                                  ALL BOY GIVE TEACHER APPLE
+  189: *MARY *VISIT *VISIT BOX                                       JOHN GIVE GIRL BOX
+  193: JOHN *POSS *VISIT BOX                                         JOHN GIVE GIRL BOX
+  199: *JOHN *VIDEOTAPE *JOHN                                        LIKE CHOCOLATE WHO
+  201: JOHN *MAN *MAN *LIKE BUY HOUSE                                JOHN TELL MARY IX-1P BUY HOUSE
+
+WER results: delta and BIC
+
 **** WER = 0.6235955056179775
 Total correct: 67 out of 178
 Video  Recognized                                                    Correct
 =====================================================================================================
-    2: *GO *BOOK HOMEWORK                                            JOHN WRITE HOMEWORK
-    7: JOHN *WHAT *MARY *WHAT                                        JOHN CAN GO CAN
-   12: JOHN *WHAT *GO1 CAN                                           JOHN CAN GO CAN
-   21: *IX *HOMEWORK WONT *FUTURE *CAR *CAR *GO *TOMORROW            JOHN FISH WONT EAT BUT CAN EAT CHICKEN
-   25: *FRANK LIKE IX *WHO IX                                        JOHN LIKE IX IX IX
-   28: *IX *WHO *FUTURE *FUTURE IX                                   JOHN LIKE IX IX IX
-   30: *SHOULD LIKE *GO *MARY *GO                                    JOHN LIKE IX IX IX
-   36: *SOMETHING-ONE VEGETABLE *GIRL *GIVE *MARY *MARY              MARY VEGETABLE KNOW IX LIKE CORN1
-   40: *SUE *GIVE *DECIDE MARY *GO                                   JOHN IX THINK MARY LOVE
-   43: *IX *GO BUY HOUSE                                             JOHN MUST BUY HOUSE
-   50: *POSS *SEE BUY CAR *ARRIVE                                    FUTURE JOHN BUY CAR SHOULD
-   54: JOHN SHOULD *WHO BUY HOUSE                                    JOHN SHOULD NOT BUY HOUSE
-   57: *MARY *PREFER *MARY MARY                                      JOHN DECIDE VISIT MARY
-   67: *LIKE *MOTHER NOT BUY HOUSE                                   JOHN FUTURE NOT BUY HOUSE
-   71: JOHN *FINISH *GIVE1 MARY                                      JOHN WILL VISIT MARY
-   74: *GO *WHO *GO *GO                                              JOHN NOT VISIT MARY
-   77: *IX BLAME *LOVE                                               ANN BLAME MARY
-   84: *LOVE *GIVE1 *POSS BOOK                                       IX-1P FIND SOMETHING-ONE BOOK
-   89: *MAN *GIVE *WOMAN *IX IX *BUY *BOOK                           JOHN IX GIVE MAN IX NEW COAT
-   90: JOHN *GIVE1 IX *GIVE3 *GIVE1 *COAT                            JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-   92: JOHN *WOMAN *WOMAN *WOMAN WOMAN BOOK                          JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-  100: POSS NEW CAR BREAK-DOWN                                       POSS NEW CAR BREAK-DOWN
-  105: *FRANK *VEGETABLE                                             JOHN LEG
-  107: *LIKE *SOMETHING-ONE *HAVE *GO *WHO                           JOHN POSS FRIEND HAVE CANDY
-  108: *IX ARRIVE                                                    WOMAN ARRIVE
-  113: IX CAR *SUE *SOMETHING-ONE *ARRIVE                            IX CAR BLUE SUE BUY
-  119: *PREFER *BUY1 IX CAR *SOMETHING-ONE                           SUE BUY IX CAR BLUE
-  122: JOHN *GIVE1 BOOK                                              JOHN READ BOOK
-  139: *SHOULD *BUY1 *CAR YESTERDAY BOOK                             JOHN BUY WHAT YESTERDAY BOOK
-  142: *FRANK BUY YESTERDAY WHAT BOOK                                JOHN BUY YESTERDAY WHAT BOOK
-  158: LOVE *MARY WHO                                                LOVE JOHN WHO
-  167: *MARY *SOMETHING-ONE *MARY LOVE *LOVE                         JOHN IX SAY LOVE MARY
-  171: *SOMETHING-ONE *SOMETHING-ONE BLAME                           JOHN MARY BLAME
-  174: *CAN *GIVE3 GIVE1 *GO *WHAT                                   PEOPLE GROUP GIVE1 JANA TOY
-  181: *SUE ARRIVE                                                   JOHN ARRIVE
-  184: *IX BOY *GIVE1 TEACHER APPLE                                  ALL BOY GIVE TEACHER APPLE
-  189: *SUE *SOMETHING-ONE *YESTERDAY *ARRIVE                        JOHN GIVE GIRL BOX
-  193: JOHN *SOMETHING-ONE *YESTERDAY BOX                            JOHN GIVE GIRL BOX
-  199: *FRANK CHOCOLATE WHO                                          LIKE CHOCOLATE WHO
-  201: JOHN *MAN *MAN *JOHN BUY HOUSE                                JOHN TELL MARY IX-1P BUY HOUSE
-
-WER results: delta and BIC
-
-**** WER = 0.6404494382022472
-Total correct: 64 out of 178
-Video  Recognized                                                    Correct
-=====================================================================================================
-    2: JOHN *JOHN HOMEWORK                                           JOHN WRITE HOMEWORK
-    7: JOHN *HAVE *GIVE1 *TEACHER                                    JOHN CAN GO CAN
+    2: JOHN *LOVE HOMEWORK                                           JOHN WRITE HOMEWORK
+    7: JOHN *STUDENT *GIVE1 *STUDENT                                 JOHN CAN GO CAN
    12: JOHN CAN *GO1 CAN                                             JOHN CAN GO CAN
-   21: *MARY *MARY *JOHN *MARY *CAR *GO *FUTURE *MARY                JOHN FISH WONT EAT BUT CAN EAT CHICKEN
-   25: JOHN *MARY *JOHN IX *MARY                                     JOHN LIKE IX IX IX
-   28: JOHN *MARY *MARY IX IX                                        JOHN LIKE IX IX IX
-   30: JOHN *MARY *JOHN *JOHN IX                                     JOHN LIKE IX IX IX
-   36: MARY *JOHN *JOHN IX *MARY *MARY                               MARY VEGETABLE KNOW IX LIKE CORN1
-   40: *MARY IX *MARY MARY *MARY                                     JOHN IX THINK MARY LOVE
-   43: JOHN *JOHN *FINISH HOUSE                                      JOHN MUST BUY HOUSE
-   50: *JOHN JOHN BUY CAR *MARY                                      FUTURE JOHN BUY CAR SHOULD
-   54: JOHN *MARY *MARY BUY HOUSE                                    JOHN SHOULD NOT BUY HOUSE
-   57: JOHN *JOHN *IX *JOHN                                          JOHN DECIDE VISIT MARY
-   67: JOHN *JOHN *JOHN BUY HOUSE                                    JOHN FUTURE NOT BUY HOUSE
-   71: JOHN *JOHN VISIT MARY                                         JOHN WILL VISIT MARY
-   74: JOHN *JOHN *MARY MARY                                         JOHN NOT VISIT MARY
-   77: *JOHN BLAME MARY                                              ANN BLAME MARY
-   84: *JOHN *GO *IX *WHAT                                           IX-1P FIND SOMETHING-ONE BOOK
-   89: *GIVE1 *JOHN *IX *JOHN IX *WHAT *HOUSE                        JOHN IX GIVE MAN IX NEW COAT
-   90: *MARY *JOHN *JOHN *IX *IX *MARY                               JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-   92: JOHN *MARY *JOHN *JOHN WOMAN *ARRIVE                          JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-  100: *JOHN NEW *WHAT BREAK-DOWN                                    POSS NEW CAR BREAK-DOWN
-  105: JOHN *MARY                                                    JOHN LEG
-  107: JOHN POSS FRIEND *LOVE *MARY                                  JOHN POSS FRIEND HAVE CANDY
-  108: *JOHN ARRIVE                                                  WOMAN ARRIVE
+   21: *MARY *MARY *HOMEWORK *MARY *CAR *TOMORROW *FUTURE *MARY      JOHN FISH WONT EAT BUT CAN EAT CHICKEN
+   25: JOHN *IX *MARY IX IX                                          JOHN LIKE IX IX IX
+   28: JOHN *MARY *JOHN IX IX                                        JOHN LIKE IX IX IX
+   30: JOHN *IX IX *JOHN IX                                          JOHN LIKE IX IX IX
+   36: *JOHN *JOHN *JOHN IX *MARY *MARY                              MARY VEGETABLE KNOW IX LIKE CORN1
+   40: *MARY IX *JOHN MARY *MARY                                     JOHN IX THINK MARY LOVE
+   43: JOHN *IX *FINISH HOUSE                                        JOHN MUST BUY HOUSE
+   50: *JOHN *FUTURE BUY CAR *MARY                                   FUTURE JOHN BUY CAR SHOULD
+   54: JOHN *JOHN *JOHN BUY HOUSE                                    JOHN SHOULD NOT BUY HOUSE
+   57: *MARY *JOHN *IX *IX                                           JOHN DECIDE VISIT MARY
+   67: JOHN *JOHN *MARY BUY HOUSE                                    JOHN FUTURE NOT BUY HOUSE
+   71: JOHN *MARY VISIT MARY                                         JOHN WILL VISIT MARY
+   74: JOHN *JOHN *IX MARY                                           JOHN NOT VISIT MARY
+   77: *JOHN *CAR MARY                                               ANN BLAME MARY
+   84: *JOHN *GIVE1 *IX BOOK                                         IX-1P FIND SOMETHING-ONE BOOK
+   89: *MARY *JOHN *IX *IX *JOHN *WHAT *CAN                          JOHN IX GIVE MAN IX NEW COAT
+   90: JOHN *JOHN *JOHN *IX *IX *JOHN                                JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
+   92: JOHN *IX *JOHN *IX *IX BOOK                                   JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
+  100: *JOHN NEW CAR BREAK-DOWN                                      POSS NEW CAR BREAK-DOWN
+  105: JOHN *JOHN                                                    JOHN LEG
+  107: JOHN *JOHN FRIEND *JOHN *MARY                                 JOHN POSS FRIEND HAVE CANDY
+  108: *JOHN *BOOK                                                   WOMAN ARRIVE
   113: *JOHN CAR *MARY *MARY *GIVE1                                  IX CAR BLUE SUE BUY
-  119: *JOHN *BUY1 IX CAR *IX                                        SUE BUY IX CAR BLUE
-  122: JOHN *VISIT *YESTERDAY                                        JOHN READ BOOK
-  139: JOHN *BUY1 WHAT *MARY *ARRIVE                                 JOHN BUY WHAT YESTERDAY BOOK
-  142: JOHN BUY *MARY *MARY *YESTERDAY                               JOHN BUY YESTERDAY WHAT BOOK
-  158: *BOY *WHO *MARY                                               LOVE JOHN WHO
-  167: *MARY *MARY *IX *ARRIVE *WHAT                                 JOHN IX SAY LOVE MARY
+  119: *JOHN *BUY1 IX CAR *MARY                                      SUE BUY IX CAR BLUE
+  122: JOHN *ARRIVE *WHAT                                            JOHN READ BOOK
+  139: JOHN *BUY1 WHAT *JOHN *MARY                                   JOHN BUY WHAT YESTERDAY BOOK
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/Users/andriitsok/anaconda3/envs/ai.tsok.sign-language/lib/python3.6/site-packages/hmmlearn/hmm.py:256: RuntimeWarning: invalid value encountered in true_divide
+  / (means_weight + denom))
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>  142: JOHN BUY *JOHN WHAT *MARY                                     JOHN BUY YESTERDAY WHAT BOOK
+  158: *ARRIVE JOHN *JOHN                                            LOVE JOHN WHO
+  167: JOHN IX *IX *CAR *WHAT                                        JOHN IX SAY LOVE MARY
   171: JOHN *JOHN BLAME                                              JOHN MARY BLAME
   174: *GIVE1 *MARY GIVE1 *MARY *FINISH                              PEOPLE GROUP GIVE1 JANA TOY
   181: JOHN *GIVE1                                                   JOHN ARRIVE
-  184: *IX *WHO *GIVE1 *HAVE *MARY                                   ALL BOY GIVE TEACHER APPLE
-  189: JOHN *IX *MARY *VISIT                                         JOHN GIVE GIRL BOX
-  193: JOHN *IX *IX BOX                                              JOHN GIVE GIRL BOX
-  199: *JOHN *ARRIVE *MARY                                           LIKE CHOCOLATE WHO
-  201: JOHN *MARY MARY *LIKE *VISIT HOUSE                            JOHN TELL MARY IX-1P BUY HOUSE
+  184: *IX *JOHN *GIVE1 *WHO *MARY                                   ALL BOY GIVE TEACHER APPLE
+  189: JOHN *JOHN *JOHN *ARRIVE                                      JOHN GIVE GIRL BOX
+  193: JOHN *IX *WOMAN BOX                                           JOHN GIVE GIRL BOX
+  199: *JOHN *WHAT *MARY                                             LIKE CHOCOLATE WHO
+  201: JOHN *IX MARY *IX BUY HOUSE                                   JOHN TELL MARY IX-1P BUY HOUSE
 
 WER results: custom and BIC
 
-**** WER = 0.6629213483146067
-Total correct: 60 out of 178
+**** WER = 0.5842696629213483
+Total correct: 74 out of 178
 Video  Recognized                                                    Correct
 =====================================================================================================
     2: *FUTURE1 WRITE HOMEWORK                                       JOHN WRITE HOMEWORK
-    7: *IX *PEOPLE *MARY *TOY                                        JOHN CAN GO CAN
-   12: JOHN CAN *GO1 CAN                                             JOHN CAN GO CAN
-   21: *ANN FISH WONT *PREFER BUT *PARTY *CHICKEN *TOMORROW          JOHN FISH WONT EAT BUT CAN EAT CHICKEN
+    7: *MARY *GO1 *MARY *TOY                                         JOHN CAN GO CAN
+   12: JOHN *GET *GO1 CAN                                            JOHN CAN GO CAN
+   21: JOHN FISH *WHO *PREFER BUT *PARTY *CHICKEN *MARY              JOHN FISH WONT EAT BUT CAN EAT CHICKEN
    25: *ANN LIKE *ANN *LIKE *ANN                                     JOHN LIKE IX IX IX
    28: *ANN LIKE *ANN *LIKE *ANN                                     JOHN LIKE IX IX IX
-   30: *LIKE LIKE *LIKE *LIKE *MARY                                  JOHN LIKE IX IX IX
-   36: MARY *JANA *THINK *MARY LIKE *LIKE                            MARY VEGETABLE KNOW IX LIKE CORN1
-   40: *JANA *MARY *CORN *VEGETABLE *FRANK                           JOHN IX THINK MARY LOVE
-   43: *ANN *PREFER BUY HOUSE                                        JOHN MUST BUY HOUSE
+   30: *IX LIKE *MARY *LIKE IX                                       JOHN LIKE IX IX IX
+   36: MARY *MARY *GIVE1 *VISIT LIKE *IX                             MARY VEGETABLE KNOW IX LIKE CORN1
+   40: JOHN *VISIT *SELF *VEGETABLE *MARY                            JOHN IX THINK MARY LOVE
+   43: JOHN *FUTURE BUY HOUSE                                        JOHN MUST BUY HOUSE
    50: *FRANK *POSS *WRITE *GIVE3 *HIT                               FUTURE JOHN BUY CAR SHOULD
-   54: JOHN SHOULD *FUTURE BUY HOUSE                                 JOHN SHOULD NOT BUY HOUSE
-   57: *MARY *OLD *GIVE2 *GIVE2                                      JOHN DECIDE VISIT MARY
-   67: *LIKE *KNOW *PREFER *STUDENT HOUSE                            JOHN FUTURE NOT BUY HOUSE
+   54: JOHN SHOULD *WILL BUY HOUSE                                   JOHN SHOULD NOT BUY HOUSE
+   57: *IX *OLD *LEAVE *GIVE2                                        JOHN DECIDE VISIT MARY
+   67: *LIKE FUTURE *PREFER *STUDENT HOUSE                           JOHN FUTURE NOT BUY HOUSE
    71: JOHN WILL *BLAME MARY                                         JOHN WILL VISIT MARY
-   74: *MARY *WHO *MARY *FRANK                                       JOHN NOT VISIT MARY
-   77: ANN BLAME *LOVE                                               ANN BLAME MARY
-   84: *ANN *ARRIVE *HOMEWORK BOOK                                   IX-1P FIND SOMETHING-ONE BOOK
-   89: *THINK *WILL *WILL *SOMETHING-ONE IX *NEW-YORK COAT           JOHN IX GIVE MAN IX NEW COAT
-   90: *WHO *IX IX *IX *CORN *CHOCOLATE                              JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-   92: *FRANK *THINK *WOMAN *WOMAN WOMAN BOOK                        JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-  100: POSS NEW CAR BREAK-DOWN                                       POSS NEW CAR BREAK-DOWN
-  105: *FRANK *SEE                                                   JOHN LEG
-  107: *MARY POSS FRIEND *BLUE *JANA                                 JOHN POSS FRIEND HAVE CANDY
+   74: *IX *WHO *MARY MARY                                           JOHN NOT VISIT MARY
+   77: ANN BLAME MARY                                                ANN BLAME MARY
+   84: *ANN *STUDENT *HOMEWORK BOOK                                  IX-1P FIND SOMETHING-ONE BOOK
+   89: *THINK *POSS *SAY *WOMAN *SOMETHING-ONE *NEW-YORK *BOOK       JOHN IX GIVE MAN IX NEW COAT
+   90: *MARY *GIVE1 IX *IX WOMAN *CHOCOLATE                          JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
+   92: JOHN *GIVE1 *SOMETHING-ONE SOMETHING-ONE WOMAN BOOK           JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
+  100: POSS NEW *BUT BREAK-DOWN                                      POSS NEW CAR BREAK-DOWN
+  105: JOHN *SEE                                                     JOHN LEG
+  107: *MARY POSS FRIEND *BLUE *JOHN                                 JOHN POSS FRIEND HAVE CANDY
   108: *THINK *LAST-WEEK                                             WOMAN ARRIVE
-  113: *SHOOT CAR BLUE SUE *BUY1                                     IX CAR BLUE SUE BUY
-  119: *VEGETABLE *BUY1 *BLUE *BLAME *SELF                           SUE BUY IX CAR BLUE
+  113: *SHOOT CAR BLUE *IX *BUY1                                     IX CAR BLUE SUE BUY
+  119: *VEGETABLE *BUY1 IX *BLAME *POSS                              SUE BUY IX CAR BLUE
   122: JOHN READ *COAT                                               JOHN READ BOOK
-  139: *SHOOT *BUY1 *TOY YESTERDAY *CHOCOLATE                        JOHN BUY WHAT YESTERDAY BOOK
-  142: *FRANK BUY YESTERDAY *HAVE BOOK                               JOHN BUY YESTERDAY WHAT BOOK
+  139: JOHN *BUY1 WHAT YESTERDAY BOOK                                JOHN BUY WHAT YESTERDAY BOOK
+  142: JOHN BUY YESTERDAY WHAT BOOK                                  JOHN BUY YESTERDAY WHAT BOOK
   158: LOVE *MARY WHO                                                LOVE JOHN WHO
-  167: *MARY *MARY *MARY LOVE *LEAVE                                 JOHN IX SAY LOVE MARY
+  167: JOHN *MARY SAY LOVE *LOVE                                     JOHN IX SAY LOVE MARY
   171: *MARY *TOY1 BLAME                                             JOHN MARY BLAME
   174: *LIVE GROUP GIVE1 *WHO TOY                                    PEOPLE GROUP GIVE1 JANA TOY
   181: *SUE *BOX                                                     JOHN ARRIVE
   184: *THROW BOY *GIVE1 TEACHER APPLE                               ALL BOY GIVE TEACHER APPLE
-  189: *JANA *SEE *CORN *CAN                                         JOHN GIVE GIRL BOX
+  189: *JANA *SELF *CORN *BUY1                                       JOHN GIVE GIRL BOX
   193: JOHN *SELF *CORN BOX                                          JOHN GIVE GIRL BOX
-  199: *ANN *HOMEWORK *TELL                                          LIKE CHOCOLATE WHO
-  201: *FRANK *THINK *WOMAN *LIKE BUY HOUSE                          JOHN TELL MARY IX-1P BUY HOUSE
+  199: *ANN *VIDEOTAPE *TELL                                         LIKE CHOCOLATE WHO
+  201: JOHN *GIVE1 *WOMAN *LIKE BUY HOUSE                            JOHN TELL MARY IX-1P BUY HOUSE
 
 WER results: ground and CONST
 
@@ -16292,7 +16339,55 @@ Video  Recognized                                                    Correct
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Question 3:</strong>  Summarize the error results from three combinations of features and model selectors.  What was the "best" combination and why?  What additional information might we use to improve our WER?  For more insight on improving WER, take a look at the introduction to Part 4.</p>
-<p><strong>Answer 3:</strong> By observing all the result I conclude that model_selector has lower impact of calculated WER. More important which features we select and how we calculate them.</p>
+<p><strong>Answer 3:</strong> By observing all the result I conclude that model_selector has lower impact of calculated WER. More important which feature set is selected and how it is calculated/normalized.</p>
+<p>Results:</p>
+<table>
+<thead><tr>
+<th>M/D</th>
+<th>Ground</th>
+<th>Norm</th>
+<th>Polar</th>
+<th>Delta</th>
+<th>MinMax/Custom</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> DIC</td>
+<td>0.5674157303370787</td>
+<td>0.6235955056179775</td>
+<td><strong>0.5280898876404494</strong></td>
+<td>0.6404494382022472</td>
+<td>0.5561797752808989</td>
+</tr>
+<tr>
+<td> VC</td>
+<td>0.6741573033707865</td>
+<td>0.6235955056179775</td>
+<td>0.6235955056179775</td>
+<td>0.6404494382022472</td>
+<td>0.6629213483146067</td>
+</tr>
+<tr>
+<td> BIC</td>
+<td>0.5449438202247191</td>
+<td>0.6123595505617978</td>
+<td>0.5393258426966292</td>
+<td>0.6235955056179775</td>
+<td>0.5842696629213483</td>
+</tr>
+<tr>
+<td> CONST</td>
+<td>0.6741573033707865</td>
+<td>0.6235955056179775</td>
+<td>0.6235955056179775</td>
+<td>0.6404494382022472</td>
+<td>0.6629213483146067</td>
+</tr>
+</tbody>
+</table>
+<p>Polar feature set + DIC model selector provide the best value of WER.</p>
+<p>How to imporve results: The word error rate can be imporved by using Language Models. The basic idea is that each word has some probability of occurrence within the set, and some probability that it is adjacent to specific other words. We can use that additional information to make better choices. With this approach, sign language word recognition would use this probability together with the one obtained from the HMM to identify words. The current model is "0-gram" statistics that is it only consider probability of current word based on hmm models. "1-gram", "2-gram", and/or "3-gram" statistics can be used to enhance the performance of the recognition.</p>
 
 </div>
 </div>
@@ -16309,7 +16404,7 @@ Video  Recognized                                                    Correct
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[105]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">asl_test_recognizer</span> <span class="k">import</span> <span class="n">TestRecognize</span>
@@ -16333,7 +16428,7 @@ Video  Recognized                                                    Correct
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>..
 ----------------------------------------------------------------------
-Ran 2 tests in 34.608s
+Ran 2 tests in 33.136s
 
 OK
 </pre>
@@ -16342,7 +16437,7 @@ OK
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[105]:</div>
+<div class="prompt output_prompt">Out[37]:</div>
 
 
 
@@ -16376,7 +16471,7 @@ Good luck!  Share your results with the class!</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[106]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># create a DataFrame of log likelihoods for the test word items</span>
@@ -16394,7 +16489,7 @@ Good luck!  Share your results with the class!</p>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[106]:</div>
+<div class="prompt output_prompt">Out[35]:</div>
 
 
 
